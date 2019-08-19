@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.olcayparlakx.saysal_beta.notturu">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/school"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+
+            <Button
+                android:id="@+id/video"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/defter"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/defter"
+                android:layout_marginTop="87dp"
+                android:background="@drawable/video" />
+
+            <Button
+                android:id="@+id/defter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/video"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/defter" />
+
+            <Button
+                android:id="@+id/soru"
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@+id/defter"
+                android:layout_alignStart="@+id/defter"
+                android:layout_below="@+id/defter"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/quiz"
+                android:paddingRight="300dp"
+                android:paddingTop="50dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/video"
+                android:layout_alignBottom="@+id/video"
+                android:layout_alignLeft="@+id/textView9"
+                android:layout_alignStart="@+id/textView9"
+                android:fontFamily="cursive"
+                android:text="Video Anlatım"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/soru"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_alignStart="@+id/textView10"
+                android:layout_marginBottom="21dp"
+                android:fontFamily="cursive"
+                android:text="Defter"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/soru"
+                android:layout_marginBottom="23dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/soru"
+                android:layout_toRightOf="@+id/soru"
+                android:fontFamily="cursive"
+                android:text="Çözümlü Test"
+                android:textColor="@android:color/background_light"
+                android:textSize="36sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
